@@ -794,8 +794,8 @@ input[name=r] {
 
 .footer__links {
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 .contact-icons {
@@ -1025,6 +1025,15 @@ input[name=r] {
     font-size: 20px;
     font-family: Montserrat-Regular;
   }
+  .contact-icons {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px; /* Отступ вниз */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px; /* Опускаем иконки вниз на 30px */
+  }
+  
   .menu-item:hover {
     background: rgb(155, 206, 206);
   }
