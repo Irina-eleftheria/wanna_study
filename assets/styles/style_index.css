@@ -49,7 +49,6 @@ main {
 }
 
 .directions__title {
-  margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
   color: rgb(22, 119, 189);
@@ -137,7 +136,6 @@ main {
     max-width: 100%;
     margin-top: 1.6rem;
     margin-bottom: 1.2rem;
-    font-size: 45px;
     padding-left: 1rem;
   }
   .directions__cards {
@@ -602,13 +600,16 @@ input[name=r] {
 @media screen and (max-width: 426px) {
   .contacts__title {
     font-size: 45px;
+    font-family: Montserrat-Regular;
   }
   .contacts__adress-titles {
     font-size: 30px;
+    font-family: Montserrat-Regular;
     line-height: 10px;
   }
   .contacts__adress-main {
     font-size: 25px;
+    font-family: Montserrat-Regular;
     line-height: 10px;
   }
 }
@@ -616,8 +617,9 @@ input[name=r] {
   display: flex;
   flex-direction: column; /* Колонный флекс */
   font-family: Montserrat-SemiBold;
-  padding-top: 30px;
+  padding-top: 15px;
   margin-block-start: 0%;
+  padding-bottom: 30px;
 }
 
 .background-container1 {
@@ -656,11 +658,12 @@ input[name=r] {
 
 .study-club-title {
   text-align: left; /* Выравнивание текста по краю */
-  font-size: 36px; /* Большой размер шрифта */
+  font-size: 30px; /* Большой размер шрифта */
   font-weight: bold; /* Жирный текст */
-  align-items: center;
-  padding-top: 30px;
+  text-align: left;
+  padding-top: 20px;
   padding-bottom: 20px;
+  font-family: Montserrat-Regular;
 }
 
 .navigation1 {
@@ -680,15 +683,16 @@ input[name=r] {
 .navigation1 a {
   display: flex;
   text-decoration: none;
-  font-weight: 100;
   color: #1576bd;
   font-size: 30px;
   padding: 10px;
+  font-family: Montserrat-Regular;
 }
 
 .navigation1 a:hover {
   font-size: 30px;
   color: #0f9437;
+  font-family: Montserrat-Regular;
 }
 
 .navigation1 img {
@@ -703,6 +707,7 @@ input[name=r] {
   display: flex;
   font-size: 24px;
   color: #1576bd;
+  font-family: Montserrat-Regular;
 }
 
 .menu__burger {
@@ -715,19 +720,29 @@ input[name=r] {
   padding: 20px;
   background-color: transparent;
   font-size: 30px;
+  font-family: Montserrat-Regular;
+  margin-top: 0px;
 }
 
 .text-section {
   width: 50%; /* Задаем ширину текстового блока */
-  padding: 20px;
+  padding: 30px;
   color: #1572c2;
   padding-left: 90px;
   padding-top: 10px;
+  font-family: Montserrat-Medium;
 }
 
 .text-section p {
   font-size: 30px; /* Увеличенный размер для заголовка */
   padding-bottom: 30px;
+  font-family: Montserrat-Medium;
+}
+
+.text-section p1 {
+  font-size: 30px; /* Увеличенный размер для заголовка */
+  padding-bottom: 30px;
+  font-family: Montserrat-Medium;
 }
 
 .image-section img {
@@ -763,6 +778,9 @@ input[name=r] {
   display: inline-block; /* Для центрирования кнопки */
   font-size: 30px;
 }
+.free-lesson-button {
+  margin-bottom: 30px;
+}
 
 .footer {
   background-color: #1572c2;
@@ -771,7 +789,7 @@ input[name=r] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Montserrat-SemiBold", sans-serif;
+  font-family: Montserrat-Regular;
   font-size: 25px;
 }
 
@@ -814,6 +832,7 @@ input[name=r] {
 @media screen and (max-width: 1026px) {
   .site-container {
     padding-top: 20px; /* Уменьшаем отступ сверху */
+    padding-bottom: 0; /* Убираем отступ вниз */
   }
   .header {
     flex-direction: column; /* Выравниваем элементы по вертикали */
@@ -839,6 +858,7 @@ input[name=r] {
     font-size: 24px; /* Уменьшаем размер шрифта навигационных ссылок */
     padding: 5px; /* Уменьшаем отступы */
     font-style: none;
+    font-family: Montserrat-Regular;
   }
   .contact-icons {
     flex-direction: column; /* Размещаем контактные иконки по вертикали */
@@ -890,6 +910,7 @@ input[name=r] {
   padding-top: 2rem; /* Уменьшаем верхний отступ */
   text-align: center; /* Выравниваем текст по центру */
   font-size: 14px; /* Уменьшаем размер шрифта */
+  font-family: Montserrat-Regular;
 }
 
 /* Adaptive phone */
@@ -972,7 +993,27 @@ input[name=r] {
     background: rgb(205, 235, 223);
     text-align: center;
     overflow: auto;
-  }
+ }
+
+ .contact-icons {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact-icons a {
+  display: inline-block; /* Помещаем иконки внутри <a> в строчный блок */
+  margin-right: 10px; /* Устанавливаем отступ между иконками */
+}
+
+.contact-icons img {
+  width: 40px; /* Устанавливаем ширину иконок */
+  height: 40px; /* Устанавливаем высоту иконок */
+}
+
   .burger-checkbox:checked ~ .menu-list {
     display: block;
   }
@@ -983,22 +1024,13 @@ input[name=r] {
     color: #1576bd;
     text-decoration: none;
     font-size: 20px;
+    font-family: Montserrat-Regular;
   }
   .menu-item:hover {
     background: rgb(155, 206, 206);
   }
   .image-section {
     display: none;
-  }
-  .button-container {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .button-container a {
-    font-size: 20px;
-    margin: 0.1rem;
-    padding: 1rem 1.2rem;
   }
   .footer {
     height: auto; /* Для автоматического растяжения футера в зависимости от контента */
@@ -1016,5 +1048,6 @@ input[name=r] {
     padding-top: 2rem; /* Уменьшаем верхний отступ */
     text-align: center; /* Выравниваем текст по центру */
     font-size: 14px; /* Уменьшаем размер шрифта */
+    font-family: Montserrat-Regular;
   }
 }/*# sourceMappingURL=style_index.css.map */
