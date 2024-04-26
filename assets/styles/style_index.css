@@ -657,12 +657,13 @@ input[name=r] {
 
 .study-club-title {
   text-align: left; /* Выравнивание текста по краю */
-  font-size: 30px; /* Большой размер шрифта */
+  font-size: 40px; /* Большой размер шрифта */
   font-weight: bold; /* Жирный текст */
   text-align: left;
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: Montserrat-Regular;
+  font-weight: bold;
 }
 
 .navigation1 {
